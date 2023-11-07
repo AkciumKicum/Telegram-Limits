@@ -25,10 +25,11 @@
     <aside class="book-menu">
         <div class="book-menu-content">
 
-            <aside class="book-toc">
-                <div class="book-toc-content">
-
-
+            <nav>
+                <h2 class="book-brand">
+                    <a class="flex align-center" href="/"><span>Telegram Limits</span>
+                    </a>
+                <ul>
                     <nav id="TableOfContents">
                         <ul>
                             <li><a href="#аккаунты">Аккаунты</a></li>
@@ -49,11 +50,8 @@
                             <li><a href="#telegraph">Telegraph</a></li>
                         </ul>
                     </nav>
-                </div>
-            </aside>
-</main>
-</body>
-</html>
+                </ul>
+            </nav>
 
             <script>(function () {
                 var a = document.querySelector("aside .book-menu-content");
@@ -81,35 +79,6 @@
                 </label>
             </div>
 
-
-            <aside class="hidden clearfix">
-
-
-                <nav id="TableOfContents">
-                    <ul>
-                        <li><a href="#аккаунты">Аккаунты</a></li>
-                        <li><a href="#чаты-и-группы">Чаты и группы</a></li>
-                        <li><a href="#каналы">Каналы</a></li>
-                        <li><a href="#голосовые-и-видео-чаты">Голосовые и видео чаты</a></li>
-                        <li><a href="#сообщения">Сообщения</a></li>
-                        <li><a href="#папки">Папки</a></li>
-                        <li><a href="#люди-рядом">Люди рядом</a></li>
-                        <li><a href="#боты">Боты</a></li>
-                        <li><a href="#поиск">Поиск</a></li>
-                        <li><a href="#стикеры">Стикеры</a></li>
-                        <li><a href="#топики">Топики</a></li>
-                        <li><a href="#fragment">Fragment</a></li>
-                        <li><a href="#публичные-папки">Публичные папки</a></li>
-                        <li><a href="#сторисы">Сторисы</a></li>
-                        <li><a href="#викторины--опросы">Викторины / Опросы</a></li>
-                        <li><a href="#telegraph">Telegraph</a></li>
-                    </ul>
-                </nav>
-
-
-            </aside>
-
-
         </header>
 
 
@@ -117,7 +86,6 @@
             Лимиты Telegram
             <a class="anchor" href="#%d0%bb%d0%b8%d0%bc%d0%b8%d1%82%d1%8b-telegram">#</a>
         </h1>
-            <p>contact: <a href="https://t.me/akciumkicum">AkciumKicum</a></p>
             <h2 id="аккаунты">
                 Аккаунты
                 <a class="anchor" href="#%d0%b0%d0%ba%d0%ba%d0%b0%d1%83%d0%bd%d1%82%d1%8b">#</a>
@@ -167,6 +135,12 @@
                     <td>Длительность видеоаватара</td>
                     <td style="text-align:center">1-10 сек</td>
                     <td style="text-align:center">1-10 сек</td>
+                </tr>
+                <tr>
+                    <td>Видеосообщения</td>
+                    <td>максимальный размер файла</td>
+                    <td style="text-align:center">12 мбайт</td>
+                    <td style="text-align:center">12 мбайт</td>
                 </tr>
                 <tr>
                     <td>Избранные стикеры</td>
@@ -1080,8 +1054,15 @@
                 </tr>
                 </tbody>
             </table>
-            <p>::: details Заметки</p>
-            <p>Результаты тестов по сторисам:</p>
+            <html>
+            <head>
+                <meta charset="utf-8">
+                <title>Спойлер</title>
+            </head>
+            <body>
+            <details>
+                <summary>Результаты тестов по сторисам</summary>
+            </html>
             <ul>
                 <li>
                     <p>Публиковать сторис могут все админы канала независимо от наличия премиума, нужно лишь наличие
@@ -1109,6 +1090,9 @@
                         :::</p>
                 </li>
             </ul>
+            </details>
+            </body>
+
             <h2 id="викторины--опросы">
                 Викторины / Опросы
                 <a class="anchor"
@@ -1178,39 +1162,3 @@
                 </tr>
                 </tbody>
             </table>
-        </article>
-
-
-        <footer class="book-footer">
-
-            <div class="flex flex-wrap justify-between">
-
-
-            </div>
-
-
-            <script>(function () {
-                function a(c) {
-                    const a = window.getSelection(), b = document.createRange();
-                    b.selectNodeContents(c), a.removeAllRanges(), a.addRange(b)
-                }
-
-                document.querySelectorAll("pre code").forEach(b => {
-                    b.addEventListener("click", function (c) {
-                        if (window.getSelection().toString()) return;
-                        a(b.parentElement), navigator.clipboard && navigator.clipboard.writeText(b.parentElement.textContent)
-                    })
-                })
-            })()</script>
-
-
-        </footer>
-
-
-        <div class="book-comments">
-
-        </div>
-
-
-        <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
