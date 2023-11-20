@@ -26,7 +26,8 @@
         <div class="book-menu-content">
             <nav class="book-brand">
                 <h2>
-                    <a class="flex align-center" href="../Telegram-Limits/"><span>Оглавление</span>
+                    <a class="flex align-center" href="../Telegram-Limits/">
+                        <span>Оглавление</span>
                     </a>
                 </h2>
                 <ul>
@@ -49,12 +50,20 @@
                 </ul>
             </nav>
 
-            <script>(function () {
-                var a = document.querySelector("aside .book-menu-content");
-                addEventListener("beforeunload", function (b) {
-                    localStorage.setItem("menu.scrollTop", a.scrollTop)
-                }), a.scrollTop = localStorage.getItem("menu.scrollTop")
-            })()</script>
+            <script>
+            (function () {
+                let menuContent = document.querySelector("aside .book-menu-content");
+
+                addEventListener("beforeunload", function () {
+                    localStorage.setItem("menu.scrollTop", menuContent.scrollTop.toString())
+                });
+
+                let currentScrollTop = parseInt(localStorage.getItem("menu.scrollTop"));
+
+                if (!isNaN(currentScrollTop))
+                    menuContent.scrollTop = currentScrollTop;
+            })()
+            </script>
         </div>
     </aside>
 
@@ -68,11 +77,7 @@
 
                 <strong>Лимиты Telegram</strong>
 
-                <label for="toc-control">
-
-                    <img src="./svg/toc.svg" class="book-icon" alt="Table of Contents"/>
-
-                </label>
+                <label for="toc-control"></label>
             </div>
 
         </header>
