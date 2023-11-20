@@ -49,8 +49,7 @@ a {
 
 abbr[title] {
     border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
+    text-decoration: underline dotted;
 }
 
 b, strong {
@@ -352,7 +351,7 @@ ul.pagination .page-item a {
     bottom: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    font-size: .6rem
+    font-size: 15px;
 }
 
 .book-menu a, .book-menu label {
@@ -593,30 +592,6 @@ body[dir=rtl] .book-menu input.toggle:checked + label::after {
     .book-page, .book-menu .book-menu-content, .book-toc .book-toc-content {
         padding: 2rem 1rem
     }
-}
-
-@font-face {
-    font-family: roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local(""), url(fonts/roboto-v27-latin-regular.woff2) format("woff2"), url(fonts/roboto-v27-latin-regular.woff) format("woff")
-}
-
-@font-face {
-    font-family: roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local(""), url(fonts/roboto-v27-latin-700.woff2) format("woff2"), url(fonts/roboto-v27-latin-700.woff) format("woff")
-}
-
-@font-face {
-    font-family: roboto mono;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local(""), url(fonts/roboto-mono-v13-latin-regular.woff2) format("woff2"), url(fonts/roboto-mono-v13-latin-regular.woff) format("woff")
 }
 
 body {
