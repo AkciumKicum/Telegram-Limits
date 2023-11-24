@@ -243,7 +243,7 @@ input.toggle {
 }
 
 html {
-    font-size: 0.8em;
+    font-size: 1.0em;
     scroll-behavior: smooth;
     touch-action: manipulation
 }
@@ -533,7 +533,7 @@ body[dir=rtl] .book-menu input.toggle:checked + label::after {
     .book-menu {
         visibility: hidden;
         margin-inline-start: -16rem;
-        font-size: 0.8em;
+        font-size: 1.0em;
         z-index: 1
     }
 
